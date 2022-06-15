@@ -5,7 +5,7 @@ const sqlite3 = require('sqlite3').verbose();
 const DBPATH = 'banco.db';
 const bodyParser = require('body-parser')
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
-app.use(express.static("../frontend/"));
+app.use(express.static("./"));
 app.use(express.json());
 /* Definição dos endpoints */
 /****** CRUD ******************************************************************/
